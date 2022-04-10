@@ -45,4 +45,4 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Regex tutorial was created by Alik Margaryan. [GitHub](https://github.com/AM0726Github)
