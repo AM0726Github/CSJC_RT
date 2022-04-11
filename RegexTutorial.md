@@ -123,3 +123,5 @@ Example
 ## Author
 
 Regex tutorial was created by Alik Margaryan. [GitHub](https://github.com/AM0726Github).
+
+[Regex tutorial](https://gist.github.com/AM0726Github/9db3051c1005abf3d8128342be4c1999)
