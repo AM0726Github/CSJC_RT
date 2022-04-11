@@ -83,16 +83,43 @@ Example
 
 ### Bracket Expressions
 
+Brackets indicate a set of characters to match. Any individual character between the brackets `[]` will match, and you can also use a hyphen to define a set. In my example we got `[A-Z]` so inside brackets we have `A-Z` and REGEX will match latters from `A` to `Z`.
 
+Example 
+* `const word = 'elephant'`
+* `word.match(/[abcd]/)`
+* `// matches 'a'`
 
 ### Greedy and Lazy Match
 
+`Greedy` means match longest possible string. `Lazy` means match shortest possible string.
+
+Example `Greedy`
+
+* the greedy `h.+l` matches `hell` in `hello` but the lazy `h.+?l` matches `hel`.
+
 ### Boundaries
+
+A word boundary, in most regex dialects, is a position between `\w` and `\W` (non-word char), or at the beginning or end of a string if it begins or ends (respectively) with a word character `[0-9A-Za-z_]`. 
+
+Example
+
+* In the string `"-12"` , it would match before the `1` or after the `2`.
 
 ### Back-references
 
+A backreference in a regular expression identifies a previously matched group and looks for exactly the same text again.
+
+* A simple example of the use of backreferences is when you wish to look for adjacent, repeated words in some text. The first part of the match could use a pattern that extracts a single word.
+
 ### Look-ahead and Look-behind
+
+The lookbehind asserts that what immediately precedes the current position is a lowercase letter. And the lookahead asserts that what immediately follows the current position is an uppercase letter.
+
+Example
+
+* The syntax is:`X(?=Y)`, it means "look for `X`, but match only if followed by `Y`". There may be any pattern instead of `X` and `Y`.
 
 ## Author
 
-Regex tutorial was created by Alik Margaryan. [GitHub](https://github.com/AM0726Github)
+Regex tutorial was created by Alik Margaryan. [GitHub](https://github.com/AM0726Github).
